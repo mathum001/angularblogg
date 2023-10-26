@@ -1,0 +1,9 @@
+<body>
+    <input class="title" type="text" [(ngModel)]="title" placeholder="Title..." />
+    <input class="thumbnail" type="text" [(ngModel)]="thumbnailUrl" placeholder="Enter Thumbnail URL..."/>
+    <input class="title" type="text" [(ngModel)]="body" placeholder="Write your post here..."/>
+    <button (click)="createPost()">Add new post!</button>
+    <br><br>
+    <button (click)="clearLocalStorage()">Rensa local Storage</button>
+
+</body>

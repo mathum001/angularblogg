@@ -1,0 +1,29 @@
+body{
+    display: grid;
+    justify-items: center;
+    margin: 40px;
+}
+input{
+    margin-top: 10px;
+}
+.title{
+    height: 40px;
+    width: 300px;
+}
+
+.thumbnail{
+    height: 30px;
+    width: 300px;
+}
+
+.post{
+    height: 300px;
+    width: 300px;
+    
+}
+button{
+    margin-top: 10px;
+    height: 30px;
+    width: 300px;
+}
+

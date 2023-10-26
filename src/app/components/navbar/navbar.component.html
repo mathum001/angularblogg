@@ -1,0 +1,21 @@
+
+
+<body>
+    <div class="container">
+        <div class="leftSide">
+        <a href="/" class="socialMedia ig"></a>
+        <a href="/" class="socialMedia fb "></a>
+        <a href="/" class="socialMedia link"></a>
+        </div>
+        <div class="logo"></div>
+
+        <div class="rightSide">
+        <button class="btn btn-outline-secondary btn-lg" routerLink="/">HOME</button>
+        <button class="btn btn-outline-secondary btn-lg" routerLink="/about">ABOUT</button>
+        <button class="btn btn-outline-secondary btn-lg" *ngIf="admin" routerLink="/addpost">Lägg till post</button>
+        <button class="btn btn-outline-secondary btn-lg" *ngIf="admin" (click)="changeView()">Växla till besökarvy</button>
+        <button class="btn btn-outline-secondary btn-lg" *ngIf="!admin" (click)="changeView()">Växla till adminvy</button>
+        <a href="/" class="search"></a>
+        </div>
+    </div>
+</body>

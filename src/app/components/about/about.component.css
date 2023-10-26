@@ -1,0 +1,103 @@
+body{
+    padding: 100px;
+    background-color: burlywood;
+}
+
+.animation
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+button{
+    height: 80px;
+    min-width: 160px;
+    margin-right: 40px;
+    font-size: larger;
+}
+
+.button1{
+    background-color: navy;
+    color: burlywood;
+}
+
+.button2{
+    border: 1px solid navy;
+    color: navy;
+    background-color: burlywood;
+}
+
+.custom-container{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.box{
+    /* width: 50%; */
+    width: 80%;
+    height: 40vh;
+    
+    
+}
+
+.picture{
+    /* width: 50px;
+    height: 50px; */
+    height: 100%;
+    width: 80%;
+}
+
+.skill-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill{
+    display: grid;
+   height: 168px;
+   width: 128px;
+   justify-content: center;
+   align-items: center;
+   justify-items: center;
+}
+
+.customImg{
+    height: 128px;
+    width: 128px;
+}
+
+p{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.contact{
+    margin-top: 200px;
+}
