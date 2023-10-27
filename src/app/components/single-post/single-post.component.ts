@@ -12,11 +12,15 @@ export class SinglePostComponent  {
   post : Post | undefined;
   commentText : string = "";
   datum : string = '';
+  shortDatum : string = '';
 
   constructor(private postService: PostsService,private Route: ActivatedRoute){
       this.Route.params.subscribe(params => {
         this.index = +params['postIndex'];
         this.post = postService.getSinglePost(this.index);
+        this.datum = this.post.creationDate.toString();
+        this.shortDatum = this.datum.substring(0,10);
+        console.log(this.shortDatum);
       })   
   }
   

@@ -1,6 +1,6 @@
 
 
-<body>
+<!-- <body>
     <div class="container">
         <div class="leftSide">
         <a href="/" class="socialMedia ig"></a>
@@ -19,3 +19,67 @@
         </div>
     </div>
 </body>
+ -->
+
+ <!DOCTYPE html>
+ <html>
+    
+ <body>
+     <nav class="navbar navbar-expand-md navbar-light bg-light">
+         <div class="container-fluid custom-navbar-container">
+            
+             <!-- Left Side (Social Media Links) -->
+             <div class="leftSide d-none d-md-flex ">
+                 <a href="/" class="socialMedia ig"></a>
+                 <a href="/" class= "socialMedia fb"></a>
+                 <a href="/" class="socialMedia link"></a>
+             </div>
+ 
+             <!-- Logo (Centered) -->
+             
+             <a class="navbar-brand mx-auto" href="/">
+                 <div class="logo"></div>
+             </a>
+ 
+             <!-- Hamburger Menu Button (visible on small screens) -->
+             
+ 
+             <!-- Navigation Links (Collapsing Menu) -->
+             <div class="col collapse navbar-collapse " id="navbarNav">
+                 <ul class="navbar-nav">
+                     <li class="nav-item">
+                         <a class="btn btn-outline-secondary btn-lg nav-link" href="/">HOME</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="btn btn-outline-secondary btn-lg nav-link" href="/about">ABOUT</a>
+                     </li>
+                     <li class="nav-item" *ngIf="admin">
+                         <a class="btn btn-outline-secondary btn-lg nav-link" href="/addpost">Lägg till post</a>
+                     </li>
+                     <li class="nav-item" *ngIf="admin">
+                         <a class="btn btn-outline-secondary btn-lg nav-link" (click)="changeView()">Växla till besökarvy</a>
+                     </li>
+                     <li class="nav-item" *ngIf="!admin">
+                         <a class="btn btn-outline-secondary btn-lg nav-link" (click)="changeView()">Växla till adminvy</a>
+                     </li>
+                     <!-- <li class="nav-item">
+                         <a class="search nav-link" href="/"></a>
+                     </li> -->
+                 </ul>
+             </div>
+            
+             <button type="button" class="navbar-toggler"  data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+         </div>
+     </nav>
+ 
+     
+    
+ </body>
+ </html>
+ 
+ 
+
+
+ 
