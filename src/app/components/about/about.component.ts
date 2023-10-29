@@ -11,5 +11,7 @@ export class AboutComponent {
 
   sendEmail() : void{
     console.log(this.email + "--------" + this.write);
+    this.email = '';
+    this.write = '';
   }
 }

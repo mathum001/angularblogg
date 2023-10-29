@@ -1,4 +1,4 @@
-   <body>
+   <!-- <body>
     <div class="custom-container">
       <div class="box">
       <h1>Hi, I am</h1>
@@ -46,7 +46,7 @@
       </div>
 
       <div class="contact" id="contact">
-        <h1>Kontakta mig:</h1>
+        <h1>Contact me:</h1>
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label">Email address</label>
           <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="email">
@@ -58,4 +58,117 @@
       </div>
       <button (click)="sendEmail()">Skicka!</button>
    
+  </body> -->
+
+  <body>
+    <div class="container">
+
+      <!--ABOUT ME ROW-->
+      <div class="row">
+        <div class="col-md-6" ><h1>Hi, I am</h1>
+          <h1>Mattias Hummer!</h1>
+          <h1 class="animation">Frontend developer.</h1>
+          <p>I'm on a mission to create digital experiences that leave users delighted and satisfied. My passion lies in crafting responsive and user-friendly websites that not only meet but exceed customer expectations.. Yada Yada</p>
+          <button class="button1" onclick="location.href='#contact'">Contact me</button>
+          <button class="button2" routerLink="/">Check out my bloggposts!</button></div>
+        <div class="col-md-6" > <img class="picture" src="assets/pictures/moon.jpg" alt="error"  ></div>
+      </div>
+
+      <!--SKILLS ROW-->
+      <div class="row custom-margin">
+        <div class="col-md-2"><h1>Skills</h1></div>
+        <div class="col-md-10 d-flex horizontal-list">
+          <ul>
+            <li><img src="assets/pictures/css.svg" alt="error">
+              <p>CSS3</p></li>
+            <li><img src="assets/pictures/git.svg" alt="error">
+              <p>Git</p></li>
+            <li><img src="assets/pictures/html.svg" alt="error">
+              <p>HTML5</p></li>
+            <li><img src="assets/pictures/javascript.svg" alt="error">
+              <p>JavaScript</p></li>
+            <li><img class="customImg" src="assets/pictures/react.svg" alt="error">
+              <p>React</p></li>
+            <li><img src="assets/pictures/tailwind.svg" alt="error">
+              <p>Tailwind</p></li>
+            <li><img src="assets/pictures/typescript.svg" alt="error">
+              <p>TypeScript</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--CONTACT ME ROW-->
+      <div class="row">
+        <div class="col-md-12"><h1>Contact me:</h1>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="email">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="write"></textarea>
+          </div>
+        </div>
+        <button (click)="sendEmail()">Skicka!</button></div>
+      </div>
+    
   </body>
+      <!-- <div class="box">
+      <h1>Hi, I am</h1>
+      <h1>Mattias Hummer!</h1>
+      <h1 class="animation">Frontend developer.</h1>
+      <p>I'm on a mission to create digital experiences that leave users delighted and satisfied. My passion lies in crafting responsive and user-friendly websites that not only meet but exceed customer expectations.. Yada Yada</p>
+      <button class="button1" onclick="location.href='#contact'">Contact me</button>
+      <button class="button2" routerLink="/">Check out my bloggposts!</button>
+      </div>
+      <div class="box">
+        <img class="picture" src="assets/pictures/moon.jpg" alt="error">
+      </div>
+      </div>
+      <br><br><br><br>
+      
+      <div class="skill-box">
+        <div class="skill">
+          <img src="assets/pictures/css.svg" alt="error">
+          <p>CSS3</p>
+        </div>
+        <div class="skill">
+          <img src="assets/pictures/git.svg" alt="error">
+          <p>Git</p>
+        </div>
+        <div class="skill">
+          <img src="assets/pictures/html.svg" alt="error">
+          <p>HTML5</p>
+        </div>
+        <div class="skill">
+          <img src="assets/pictures/javascript.svg" alt="error">
+          <p>JavaScript</p>
+        </div>
+        <div class="skill">
+          <img class="customImg" src="assets/pictures/react.svg" alt="error">
+          <p>React</p>
+        </div>
+        <div class="skill">
+          <img src="assets/pictures/tailwind.svg" alt="error">
+          <p>Tailwind</p>
+        </div>
+        <div class="skill">
+          <img src="assets/pictures/typescript.svg" alt="error">
+          <p>TypeScript</p>
+        </div>
+      </div>
+
+      <div class="contact" id="contact">
+        <h1>Contact me:</h1>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="email">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="write"></textarea>
+        </div>
+      </div>
+      <button (click)="sendEmail()">Skicka!</button>
+    -->
+   

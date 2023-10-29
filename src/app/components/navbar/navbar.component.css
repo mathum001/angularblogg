@@ -35,12 +35,16 @@
     
 } */
 
-.custom-navbar-container {
+/* .custom-navbar-container {
     display: flex;
     justify-content: space-between;
     
-    align-items: center;
-  }
+    align-items: center !important;
+  } */
+.logo-text{
+    font-family: "Brush Script Mt", Times, serif;
+    font-size: 5rem;
+}
 
 .logo{
     

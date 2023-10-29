@@ -57,6 +57,23 @@ button{
    
 }
 
+.horizontal-list{
+    list-style: none;
+    
+    
+}
+
+.custom-margin{
+    margin-top: 5rem;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+
 .box{
     /* width: 50%; */
     width: 80%;
@@ -68,7 +85,7 @@ button{
 .picture{
     /* width: 50px;
     height: 50px; */
-    height: 100%;
+    max-height: 50%;
     width: 80%;
 }
 

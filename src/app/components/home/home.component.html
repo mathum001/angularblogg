@@ -10,7 +10,7 @@
     </div>
 </body> -->
 
-<body> 
+<!-- <body> 
     <div class="container" >
         <div class="card" style="background-color: beige; margin-top: 10px;" *ngFor="let post of posts; let i = index" (click)="goToSinglePost(i)" >
             <div class="cardPic">
@@ -19,5 +19,19 @@
             <div class="cardTitle">{{post.title}}</div>
         </div>
     </div>
-</body>
+</body> -->
+
+<div class="container-fluid text-center" style="padding: 5rem;">
+    <div class="row">
+      <div class="col-md-4 custom-margin text-center justify-content-center d-flex" *ngFor="let post of posts; let i = index" (click)="goToSinglePost(i)">
+        <div class="card text-center h-100" style="width: 25rem;">
+            <img src="{{post.thumbnailUrl}}" class="card-img-top" alt="..." style="width: 100%; height: 400px;">
+            <div class="card-body">
+              <h5 class="card-title">{{post.title}}</h5>
+              <!-- <a href="#" class="btn btn-primary">Read more</a> -->
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
 
