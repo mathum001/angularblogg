@@ -19,7 +19,7 @@ const routes: Routes = [
     component: AddPostComponent,
   },
   {
-  path: "singlePost/:postIndex",
+  path: "singlePost/:postIndex", 
     component: SinglePostComponent,
   },
   
@@ -30,3 +30,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+/* "singlePost", /:postIndex */

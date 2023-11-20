@@ -1,31 +1,10 @@
-<!-- <body> 
-    <div class="row text-center" style="margin: 5rem;">
-        <div class="col-md-4 card" style="background-color: beige; margin-top: 10px;" *ngFor="let post of posts; let i = index" (click)="goToSinglePost(i)" >
-            <div class="card-header">{{post.title}}</div>
-            <div class="card-body">
-                <img  src="{{post.thumbnailUrl}}" alt="Img not found">
-            </div>
-            
-        </div>
-    </div>
-</body> -->
 
-<!-- <body> 
-    <div class="container" >
-        <div class="card" style="background-color: beige; margin-top: 10px;" *ngFor="let post of posts; let i = index" (click)="goToSinglePost(i)" >
-            <div class="cardPic">
-                <img  src="{{post.thumbnailUrl}}" alt="Img not found">
-            </div>
-            <div class="cardTitle">{{post.title}}</div>
-        </div>
-    </div>
-</body> -->
 
 <div class="container-fluid text-center" style="padding: 5rem;">
     <div class="row">
       <div class="col-md-4 custom-margin text-center justify-content-center d-flex" *ngFor="let post of posts; let i = index" (click)="goToSinglePost(i)">
         <div class="card text-center h-100" style="width: 25rem;">
-            <img src="{{post.thumbnailUrl}}" class="card-img-top" alt="..." style="width: 100%; height: 400px;">
+            <img src="{{post.thumbnailUrl}}" class="card-img-top" alt="...Image not found..." style="width: 100%; height: 400px;">
             <div class="card-body">
               <h5 class="card-title">{{post.title}}</h5>
               <!-- <a href="#" class="btn btn-primary">Read more</a> -->

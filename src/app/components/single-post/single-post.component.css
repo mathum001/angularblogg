@@ -1,4 +1,145 @@
+
 body{
+    background-color: beige;
+    max-width: 100vw;
+    min-height: 100%;
+}
+
+img{
+    max-width: 100%;
+  }
+
+
+@media only screen and (min-width: 768px) {
+
+    .body{
+        display: grid;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    .container-big{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        width: 100vw;
+        height: 100%;
+        
+        background-color: green;
+        
+        justify-content: center;
+    }
+
+    p{
+        
+        
+    }
+
+    .goBackBtn{
+        width: 20%;
+    }
+
+    .left{
+        
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 35%;
+        
+        padding-left: 2em;
+        background-color: #eeb4a2;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left-container{
+        display: grid;
+        width: 100%;
+        height: 10%;
+        
+    }
+
+    .right{
+        padding: 2em;
+        margin: 0;
+        
+        width: 65%;
+        background-color: beige;
+    }
+
+    .likes{
+        margin-top: 1em;
+        margin-bottom: 1em;
+        gap: 1em;
+    }
+    img{
+      max-width: 100%;
+    }
+    .title{
+        display: flex;
+        width: 30%;
+        border-bottom: 1px solid black;
+    }
+}
+
+/*BOOTSTRAP BELOW*/
+/* body{
+    
+    
+    background-color: red;
+}
+
+.row{
+    margin: 0;
+    min-height: 100vh;
+    
+    justify-content: center;
+    
+}
+
+.right{
+    background-color: green;
+    padding: 5px;
+    
+}
+
+.left{
+    display: flex;
+    background-color: #eeb4a2;
+    align-items: center;
+    
+    
+    
+}
+.container{
+    display: grid;
+    justify-items: center;
+}
+.title{
+    width: 10rem;
+    border-bottom: 1px solid black;
+}
+.date{
+    margin-left: 1em;
+}
+.goBackBtn{
+    border-radius: 5%;
+}
+img{
+   min-height: 30vh;
+    max-width: 85%;
+    max-height: 80vh;
+} */
+
+
+
+
+
+
+/* body{
     display: flex;
     min-height: 100%;
     width: 100%;
@@ -9,9 +150,7 @@ body{
 
 .rightSide{
     display: grid;
-    
     margin-left: 30%;
-    
     padding: 50px;
     padding-left: 200px;
     width: 70%;
@@ -20,6 +159,17 @@ body{
 }
 .rightSide > *{
     margin-top: 10px;
+}
+
+.rightSide > p {
+    font-size: larger;
+    padding-right: 5%;
+}
+
+img{
+   
+    max-width: 85%;
+    max-height: 80vh;
 }
 
 .leftSide{
@@ -33,16 +183,6 @@ body{
     width: 30%;
     background-color: #eeb4a2;
     padding-left: 100px;
-    
-    
-}
-
-img{
-    width: 80%;
-    height: 60%;
-    max-width: 85%;
-    max-height: 80vh;
-    
 }
 
 .goBackBtn{
@@ -50,6 +190,7 @@ img{
     position: fixed;
     width: 100px;
     height: 67px;
+    border-radius: 5%;
 }
 
 .title{
@@ -59,4 +200,4 @@ img{
 
 .date{
     top: 0;
-}
+} */

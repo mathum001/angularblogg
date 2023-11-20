@@ -1,27 +1,4 @@
 
-
-<!-- <body>
-    <div class="container">
-        <div class="leftSide">
-        <a href="/" class="socialMedia ig"></a>
-        <a href="/" class="socialMedia fb "></a>
-        <a href="/" class="socialMedia link"></a>
-        </div>
-        <div class="logo"></div>
-
-        <div class="rightSide">
-        <button class="btn btn-outline-secondary btn-lg" routerLink="/">HOME</button>
-        <button class="btn btn-outline-secondary btn-lg" routerLink="/about">ABOUT</button>
-        <button class="btn btn-outline-secondary btn-lg" *ngIf="admin" routerLink="/addpost">Lägg till post</button>
-        <button class="btn btn-outline-secondary btn-lg" *ngIf="admin" (click)="changeView()">Växla till besökarvy</button>
-        <button class="btn btn-outline-secondary btn-lg" *ngIf="!admin" (click)="changeView()">Växla till adminvy</button>
-        <a href="/" class="search"></a>
-        </div>
-    </div>
-</body>
- -->
-
-
  <!DOCTYPE html>
  <html>
     
@@ -30,21 +7,23 @@
          <div class="container-fluid custom-navbar-container mr-auto">
             <div class="container-fluid">
             <div class="row">
-              <!-- Left Side (Social Media Links) --> 
+              <!-- Left Side (sociala medier Links) --> 
              <div class="col-md-4 leftSide d-none d-md-flex align-items-center">
                  <a href="/" class="socialMedia ig"></a>
                  <a href="/" class= "socialMedia fb"></a>
                  <a href="/" class="socialMedia link"></a>
              </div>
  
-              <!-- Logo (Centered) --> 
+              <!-- Logo --> 
              
-             <a class="col-md-4 navbar-brand mx-auto text-center" href="/">
-                  <!-- <div class="logo"></div>  -->
-                 <h1 class="logo-text">Mattias Blogg</h1>
+             <a class="col-md-4 navbar-brand mx-auto text-center" href="/" (click)="updateStorage()">
+                  
+                 <h1 class="logo-text d-none d-lg-block">Mattias Blogg</h1>
+                 <h1 class="logo-text d-xs-block d-lg-none">Mattias</h1>
+
              </a>
 
-             <!--  Hamburger Menu Button (visible on small screens) -->
+             
              
             
            
@@ -52,10 +31,10 @@
              <div class="col-md-4 collapse navbar-collapse ml-auto" id="navbarNav">
                  <ul class="navbar-nav mx-auto">
                      <li class="nav-item">
-                         <a class="btn btn-outline-secondary btn-lg nav-link" href="/">HOME</a>
+                         <a class="btn btn-outline-secondary btn-lg nav-link" (click)="updateStorage()" href="/">HOME</a>
                      </li>
                      <li class="nav-item">
-                         <a class="btn btn-outline-secondary btn-lg nav-link" href="/about">ABOUT</a>
+                         <a class="btn btn-outline-secondary btn-lg nav-link" (click)="updateStorage()" href="/about">ABOUT</a>
                      </li>
                      
                      <li class="nav-item" *ngIf="admin">
@@ -80,6 +59,7 @@
              
          </div>
      </nav>
+
  </body>
  </html> 
 

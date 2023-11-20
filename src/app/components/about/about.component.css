@@ -49,6 +49,10 @@ button{
     background-color: burlywood;
 }
 
+.button3{
+    width: 30vw;
+}
+
 .custom-container{
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -64,7 +68,7 @@ button{
 }
 
 .custom-margin{
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
 }
 
 .horizontal-list li{
@@ -118,3 +122,11 @@ p{
 .contact{
     margin-top: 200px;
 }
+
+
+
+@media (min-width: 992px) {
+    .custom-height {
+      height: 600px; 
+    }
+  }

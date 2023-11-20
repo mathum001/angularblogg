@@ -19,4 +19,5 @@ export class HomeComponent {
     this.router.navigate(['singlePost', postIndex]);
   }
   
+  /* , postIndex */
 }

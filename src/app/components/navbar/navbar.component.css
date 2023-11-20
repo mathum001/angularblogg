@@ -1,50 +1,10 @@
-/* body{
-    height: 100%;
-    width: 100%;
-   background-color: beige;
-   
-} */
 
-/* .container{
-   
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 15vh;
-    background-color: beige;
-} */
-
-/* .leftSide{
-    
-    display: flex;
-    position: absolute;
-    left: 0;
-    align-items: center;
-    justify-content: left;
-    margin-left: 40px;
-    
-} */
-
-/* .rightSide{
-    position: absolute;
-    margin-right: 40px;
-    display: flex;
-    right: 0;
-    align-items: center;
-    
-} */
-
-/* .custom-navbar-container {
-    display: flex;
-    justify-content: space-between;
-    
-    align-items: center !important;
-  } */
 .logo-text{
     font-family: "Brush Script Mt", Times, serif;
     font-size: 5rem;
 }
+
+
 
 .logo{
     

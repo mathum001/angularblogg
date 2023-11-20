@@ -36,4 +36,10 @@ export class PostsService {
     return this.newPosts[index];
   }
 
+  deleteSinglePost(index: number){
+    this.newPosts.splice(index, 1);
+    this.savePostLocalStorage();
+    console.log(this.newPosts);
+  }
+
 }
