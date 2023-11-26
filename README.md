@@ -1,12 +1,3 @@
-# Kvar att göra!
-
-- Bootstrappa singlepost -- KLART
-- Gör så att om man är inne på single post och klickar på HOME eller About, uppdatera local storage-- KLART
-- About me - fixa kontakta mig knappen -- KLART
-- Lägg till en radera single post knapp om man är admin! -- KLART
-- Fixa contactformulär så mail skickas?
-- Gör så man kan uppdatera single post -- ** SVÅRT SOM FAN\_**
-
 # Angularblogg
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.

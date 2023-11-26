@@ -31,4 +31,3 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
-/* "singlePost", /:postIndex */
