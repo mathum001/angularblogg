@@ -38,20 +38,54 @@
 
       <!--CONTACT ME ROW-->
       <div class="row" id="contact">
-        <div class="col-md-10"><h1>Contact me:</h1>
+        <div class="col-md-10">
+          <h1>Contact me:</h1>
           <div class="mb-3">
-            <form >
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" required>
-          </form></div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="write"></textarea>
-          </div>
+            <form [formGroup]="emailForm" (ngSubmit)="onSubmit()">
+              <input type="text" formControlName="name" placeholder="Your Name">
+              <!-- Display error message if the name field is invalid -->
+              <div *ngIf="emailForm.get('name')?.invalid && emailForm.get('name')?.touched">
+                Name is required
+              </div>
         
-        <button class="button3 button1" type="submit"  (click)="sendEmail()">Skicka!</button></div>
-      </div>
+              <input type="email" formControlName="email" placeholder="example@mail.com">
+              <!-- Display error message if email field is invalid -->
+              <div *ngIf="emailForm.get('email')?.invalid && emailForm.get('email')?.touched">
+                Please enter a valid email
+              </div>
+        
+              <textarea formControlName="message" placeholder="Enter your message here"></textarea>
+              <!-- Display error message if the message field is invalid -->
+              <div *ngIf="emailForm.get('message')?.invalid && emailForm.get('message')?.touched">
+                Message is required
+              </div>
+        
+              <!-- Skicka-knappen -->
+              <button class="button3 button1" type="submit">Skicka!</button>
+            </form>
+          </div>
+        </div>
     </div>
+    </div>
+
+
     
   </body>
+
+  <!--CONTACT ME ROW-->
+ <!--  <div class="row" id="contact">
+    <div class="col-md-10"><h1>Contact me:</h1>
+      <div class="mb-3">
+        <form >
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" required>
+      </form></div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="write"></textarea>
+      </div>
     
+    <button class="button3 button1" type="submit"  (click)="sendEmail()">Skicka!</button></div>
+  </div>
+</div>
+     -->
